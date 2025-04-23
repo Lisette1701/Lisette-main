@@ -1,0 +1,57 @@
+/* Fondo principal blanco y texto en negro */
+body {
+    font-family:'Times New Roman', Times, serif
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Encabezado con fondo negro y espacio inferior para separar de los botones del contenido */
+header {
+    background-color: #000000;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+/* Navegación centrada con enlaces en blanco */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #8a8787;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a5a1a5;
+}
+
+/* Botones con tonos morados, manteniendo el mismo estilo */
+button {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #9370db;
+}
