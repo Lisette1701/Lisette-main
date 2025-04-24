@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>Página de Perfil</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/connections.css">
-    <link rel="stylesheet" href="images/icons.css">
+    <link rel="stylesheet" href="styles/icons.css">
 </head>
 <body>
     <header class="main-header">
-        <div class="logo">Profile</div>
+        <div class="logo">Perfil</div>
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">My Profile</a>
-            <a href="#">Find Connections</a>
+            <a href="#" class="active">Inicio</a>
+            <a href="#">Mi perfil</a>
+            <a href="#">Conexiones</a>
         </nav>
-        <button class="sign-out">Sign Out</button>
+        <button class="sign-out">Cerrar sesión</button>
     </header>
 
     <main class="container">
@@ -30,65 +30,55 @@
                         <div class="user-icon"></div>
                     </div>
                     <h1>Jane Doe</h1>
-                    <p class="location"><span class="location-icon"></span> Seattle</p>
-                    <p class="bio">Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
+                    <p class="location"><span class="location-icon"></span>Bergen, Noruega</p>
+                    <p class="bio">Desarrolladora Frontend<br>Conocimientos en HTML, CSS, JavaScript</p>
                     <a href="#" class="edit-profile">
                         <span class="gear-icon"></span>
-                        edit profile
+                        Editar perfil
                     </a>
-                </div>
-            </div>
-
-            <div class="education-card">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
-                    <p class="date">Dec 2019 - Mar 2020</p>
-                    <p class="description">Triple black belt in Python, MERN, and C#...</p>
                 </div>
             </div>
         </div>
 
         <aside class="sidebar">
             <div class="connection-requests">
-                <h2><span class="badge">2</span>Connection Requests</h2>
+                <h2>Solicitudes de conexión <a href="#" class="view-all">Ver todas</a></h2>
                 <div class="request-item">
                     <div class="user-icon small"></div>
-                    <span>Todd E</span>
+                    <span>Steve Jobs</span>
                     <div class="actions">
-                        <button class="accept" aria-label="Accept"></button>
-                        <button class="reject" aria-label="Reject"></button>
+                        <button class="accept" aria-label="Aceptar"></button>
+                        <button class="reject" aria-label="Rechazar"></button>
                     </div>
                 </div>
                 <div class="request-item">
                     <div class="user-icon small"></div>
-                    <span>Phil K</span>
+                    <span>Bill Gates</span>
                     <div class="actions">
-                        <button class="accept" aria-label="Accept"></button>
-                        <button class="reject" aria-label="Reject"></button>
+                        <button class="accept" aria-label="Aceptar"></button>
+                        <button class="reject" aria-label="Rechazar"></button>
                     </div>
                 </div>
             </div>
 
             <div class="your-connections">
-                <h2><span class="badge">500+</span>Your Connections</h2>
+                <h2>Tus conexiones <a href="#" class="view-all">Ver todas</a></h2>
                 <div class="connection-item">
                     <div class="user-icon small"></div>
-                    <span>Adrien D</span>
+                    <span>Richard Stallman</span>
                 </div>
                 <div class="connection-item">
                     <div class="user-icon small"></div>
-                    <span>Anne J</span>
+                    <span>Linus Torvalds</span>
                 </div>
                 <div class="connection-item">
                     <div class="user-icon small"></div>
-                    <span>Alayne T</span>
+                    <span>Ada Lovelace</span>
                 </div>
                 <div class="connection-item">
                     <div class="user-icon small"></div>
-                    <span>Arry Y</span>
+                    <span>Grace Hopper</span>
                 </div>
-                <a href="#" class="view-more">View More</a>
             </div>
         </aside>
     </main>
