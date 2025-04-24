@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/connections.css">
+    <link rel="stylesheet" href="images/icons.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Profile</div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">My Profile</a>
+            <a href="#">Find Connections</a>
+        </nav>
+        <button class="sign-out">Sign Out</button>
+    </header>
+
+    <main class="container">
+        <div class="profile-section">
+            <div class="profile-card">
+                <div class="profile-header"></div>
+                <div class="profile-content">
+                    <div class="profile-avatar">
+                        <div class="user-icon"></div>
+                    </div>
+                    <h1>Jane Doe</h1>
+                    <p class="location"><span class="location-icon"></span> Seattle</p>
+                    <p class="bio">Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
+                    <a href="#" class="edit-profile">
+                        <span class="gear-icon"></span>
+                        edit profile
+                    </a>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p class="date">Dec 2019 - Mar 2020</p>
+                    <p class="description">Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="connection-requests">
+                <h2><span class="badge">2</span>Connection Requests</h2>
+                <div class="request-item">
+                    <div class="user-icon small"></div>
+                    <span>Todd E</span>
+                    <div class="actions">
+                        <button class="accept" aria-label="Accept"></button>
+                        <button class="reject" aria-label="Reject"></button>
+                    </div>
+                </div>
+                <div class="request-item">
+                    <div class="user-icon small"></div>
+                    <span>Phil K</span>
+                    <div class="actions">
+                        <button class="accept" aria-label="Accept"></button>
+                        <button class="reject" aria-label="Reject"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="your-connections">
+                <h2><span class="badge">500+</span>Your Connections</h2>
+                <div class="connection-item">
+                    <div class="user-icon small"></div>
+                    <span>Adrien D</span>
+                </div>
+                <div class="connection-item">
+                    <div class="user-icon small"></div>
+                    <span>Anne J</span>
+                </div>
+                <div class="connection-item">
+                    <div class="user-icon small"></div>
+                    <span>Alayne T</span>
+                </div>
+                <div class="connection-item">
+                    <div class="user-icon small"></div>
+                    <span>Arry Y</span>
+                </div>
+                <a href="#" class="view-more">View More</a>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
