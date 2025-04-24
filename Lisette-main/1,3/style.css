@@ -1,6 +1,6 @@
 /* Fondo principal blanco y texto en negro */
 body {
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
     background-color: #ffffff;
     color: #000000;
     text-align: center;
