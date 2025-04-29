@@ -34,6 +34,19 @@ a {
 
 /*HEADER*/
 
+.user{
+    height: 100px;
+}
+
+.accept-icon{
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.reject-icon{
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 .profile-card {
     background-color: white;
