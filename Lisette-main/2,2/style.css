@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebecec;
+    margin: 10;
+}
+        
+h1 {
+    text-align: center;
+    color: #24292e;
+}
+        
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+        
+.fila-orden{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+        
+.img {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+        
+.img img {
+    max-width: 100%;
+}
+
+.m-1 {
+    background-color: #5bc0de;
+}
+        
+.m-2 {
+    background-color: #D4A6CA;
+}
+        
+.m-3 {
+    background-color: white;
+}
