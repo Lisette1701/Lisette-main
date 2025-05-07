@@ -15,89 +15,107 @@ body {
     margin: 0 auto;
     display: flex;
     gap: 10px;
+    height: 600px;
 }
 
 .caja {
     background-color: #b5bab9;
+    border: none;
 }
 
-.contenedor-izquierdo {
-    flex: 5;
+.seccion-izquierda {
+    flex: 3.5;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.contenedor-central {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.rectangulo-grande {
+    height: 200px;
 }
 
-.contenedor-derecho {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.caja-grande {
-    height: 210px;
-}
-
-.caja-horizontal {
+.rectangulo-horizontal {
     height: 50px;
 }
 
-.flex-inferior {
+.contenedor-inferior {
     display: flex;
     gap: 10px;
-    height: 270px;
-}
-
-.caja-izq-inferior {
     flex: 1;
 }
 
-.medio-contenedor {
+.cuadrado-izquierdo {
+    flex: 1;
+}
+
+.contenedor-medio-inferior {
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.caja-media-ancha {
-    height: calc(50% - 5px);
-}
-
-.caja-central-superior {
-    height: 120px;
-}
-
-.caja-central-media {
+.rectangulo-medio-superior {
     height: 130px;
 }
 
-.flex-central-inferior {
+.contenedor-inferior-pequeno {
     display: flex;
-    flex-direction: column;
     gap: 10px;
     flex: 1;
 }
 
-.caja-central-inferior {
+.cuadrado-pequeno-izq, .cuadrado-pequeno-der {
     flex: 1;
 }
 
-.caja-derecha-superior {
-    height: 120px;
+.seccion-central {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.caja-derecha-medio {
-    height: 120px;
+.contenedor-cuadrados-superiores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 260px;
 }
 
-.caja-derecha-vertical {
+.cuadrado-superior-izq, .cuadrado-superior-der {
     flex: 1;
+}
+
+.rectangulo-central {
+    flex: 1.5;
+}
+
+.contenedor-cuadrados-inferiores {
+    display: flex;
+    gap: 10px;
+    height: 130px;
+}
+
+.cuadrado-inferior-izq, .cuadrado-inferior-der {
+    flex: 1;
+}
+
+.seccion-derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rectangulo-derecha-superior {
+    height: 130px;
+}
+
+.rectangulo-derecha-medio {
+    flex: 1;
+}
+
+.rectangulo-derecha-inferior {
+    height: 130px;
 }
