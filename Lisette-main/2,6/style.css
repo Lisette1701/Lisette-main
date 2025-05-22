@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FDF6EC;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.cabecera {
+    background: #34495E;
+    color: white;
+    padding: 18px 10px;
+    text-align: center;
+}
+
+.cabecera h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cabecera p {
+    font-size: 11px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    -ms-flex-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px 10px;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Cuadrado grande de en medio */
+.cuadrado-grande {
+    background: #E67E22;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.cuadrado-grande h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cuadrado-grande p {
+    font-size: 17px;
+    opacity: 0.95;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedor de cuadraditos de abajo */
+.cuadraditos-abajo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Cuadraditos individuales */
+.cuadradito {
+    background: #D35400;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 6px;
+    text-align: center;
+    flex: 1;
+    max-width: 280px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
