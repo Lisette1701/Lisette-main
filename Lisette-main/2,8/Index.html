@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Familia Batman - Galería DC</title>
+    <title>Los Robins - Galería DC</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="contenedor">
         <nav class="nav">
-            <h2>Bat-Family</h2>
+            <h2>Los Robins</h2>
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Galería</a></li>
@@ -20,41 +20,42 @@
         </nav>
 
         <main class="contenido">
-            <h1> Galería de la Familia Wayne</h1>
-            <p class="subtitulo">Los protectores de Gotham City</p>
+            <h1>Los hijos de Bruce Wayne</h1>
+            <p class="subtitulo">Los protegidos de Batman</p>
             
             <div class="galeria">
-                <div class="tarjeta batman">
-                    <span class="icono">🦇</span>
-                    <h3>Bruce Wayne</h3>
-                    <p>El Caballero Oscuro de Gotham. Fundador y líder de la Bat-Family.</p>
+                <div class="tarjeta nightwing" onclick="mostrarInfo('dick')">
+                    <img src="img/Dick_Grayson.jpg" alt="Dick Grayson" class="imagen-personaje">
+                    <h3>Dick Grayson</h3>
+                    <p class="nombre-heroe">Nightwing</p>
                 </div>
                 
-                <div class="tarjeta nightwing">
-                    <span class="icono">🌙</span>
-                    <h3>Richard Dick Grayson</h3>
-                    <p>El primer Robin, ahora protector de Blüdhaven.</p>
+                <div class="tarjeta redhood" onclick="mostrarInfo('jason')">
+                    <img src="img/Jason_Todd.jpg" alt="Jason Todd" class="imagen-personaje">
+                    <h3>Jason Todd</h3>
+                    <p class="nombre-heroe">Red Hood</p>
                 </div>
                 
-                <div class="tarjeta redhood">
-                    <span class="icono">🔴</span>
-                    <h3>Red Hood</h3>
-                    <p>Jason Todd - El segundo Robin, regresó como antihéroe.</p>
+                <div class="tarjeta redrobin" onclick="mostrarInfo('tim')">
+                    <img src="img/Tim_Drake.jpg" alt="Tim Drake" class="imagen-personaje">
+                    <h3>Tim Drake</h3>
+                    <p class="nombre-heroe">Red Robin</p>
                 </div>
                 
-                <div class="tarjeta redrobin">
-                    <span class="icono">🔶</span>
-                    <h3>Red Robin</h3>
-                    <p>Tim Drake - El tercer Robin, detective excepcional.</p>
+                <div class="tarjeta robin" onclick="mostrarInfo('damian')">
+                    <img src="img/Damian-Wayne.jpg" alt="Damian Wayne" class="imagen-personaje">
+                    <h3>Damian Wayne</h3>
+                    <p class="nombre-heroe">Robin</p>
                 </div>
-                
-                <div class="tarjeta robin">
-                    <span class="icono">⚔️</span>
-                    <h3>Robin</h3>
-                    <p>Damian Wayne - Hijo de Bruce, el Robin actual.</p>
-                </div>
+            </div>
+
+            <div id="info" class="info-personaje">
+                <div id="contenido-info"></div>
+                <button class="cerrar-info" onclick="cerrarInfo()">Cerrar</button>
             </div>
         </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

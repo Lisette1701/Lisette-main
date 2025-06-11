@@ -6,8 +6,7 @@
 
 body {
     font-family: 'Segoe UI', 'Arial Black', sans-serif;
-    background: linear-gradient(135deg, #0d1117 0%, #1a1a2e 50%, #16213e 100%);
-    color: #e6e6e6;
+    background: hwb(216 5% 91%);        
     min-height: 100vh;
 }
 
@@ -62,7 +61,6 @@ body {
     padding: 8px 0;
 }
 
-
 /* CONTENIDO */
 .contenido {
     flex: 4;
@@ -77,6 +75,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: center;
 }
 
 .subtitulo {
@@ -84,17 +83,21 @@ body {
     font-size: 1.1rem;
     margin-bottom: 30px;
     font-style: italic;
+    text-align: center;
 }
 
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tarjeta {
-    padding: 35px 25px;
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
@@ -102,6 +105,8 @@ body {
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    min-height: 300px;
 }
 
 .tarjeta::before {
@@ -124,57 +129,101 @@ body {
     border-color: #ffd700;
 }
 
+.imagen-personaje {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #ffd700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.tarjeta:hover .imagen-personaje {
+    transform: scale(1.1);
+    border-color: #ffffff;
+}
+
 .tarjeta h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.tarjeta p {
+.nombre-heroe {
     font-size: 0.9rem;
-    opacity: 0.9;
-    line-height: 1.4;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
-.icono {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    display: block;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
-}
-
-/* Proporciones y colores temáticos */
-.batman {
-    flex: 3;
-    background: #333333;
-    color: #ffd700;
-    min-height: 200px;
-}
-
+/* Colores temáticos */
 .nightwing {
-    flex: 3;
-    background:#3b82f6;
+    background: #3b82f6;
     color: #ffffff;
-    min-height: 200px;
 }
 
 .redhood {
-    flex: 3;
-    background:#7f1d1d;
+    background: #7f1d1d;
     color: #ffffff;
-    min-height: 200px;
 }
 
 .redrobin {
-    flex: 3;
     background: #ea580c;
     color: #ffffff;
-    min-height: 200px;
 }
 
 .robin {
-    flex: 3;
-    background:#14532d;
+    background: #14532d;
     color: #ffffff;
-    min-height: 200px;
+}
+
+/* Información del personaje */
+.info-personaje {
+    background: rgba(0, 0, 0, 0.9);
+    color: #e6e6e6;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #ffd900;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    display: none;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-personaje.activa {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+
+.info-personaje h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.info-personaje p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.cerrar-info {
+    background: #ffd700;
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.cerrar-info:hover {
+    background: #ffed4e;
+    transform: scale(1.05);
 }
