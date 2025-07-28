@@ -191,18 +191,3 @@ body {
     color: #0066cc;
     text-decoration: underline;
 }
-
-/* Panel derecho - Instrucciones */
-.panel_instrucciones {
-    width: 180px;
-}
-
-.nota_instructiva {
-    background-color: #fff3a0;
-    border: 2px solid #000;
-    padding: 15px;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #333;
-    border-radius: 0; /* Cuadrado perfecto */
-}
