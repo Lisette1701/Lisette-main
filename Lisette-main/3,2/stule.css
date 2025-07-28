@@ -1,0 +1,208 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+/* Barra de navegación del navegador simulada */
+.barra_navegador {
+    background-color: #e8e8e8;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.botones_navegacion {
+    display: flex;
+    gap: 5px;
+}
+
+.boton_nav {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #999;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 0; /* Cuadrados perfectos */
+}
+
+.barra_direcciones {
+    flex: 1;
+    padding: 4px 8px;
+    border: 1px solid #999;
+    background: white;
+    font-size: 11px;
+    border-radius: 0; /* Cuadrado perfecto */
+}
+
+.boton_busqueda {
+    width: 60px;
+    height: 24px;
+    border: 1px solid #999;
+    background: #f0f0f0;
+    border-radius: 0; /* Cuadrado perfecto */
+}
+
+/* Encabezado principal */
+.encabezado_principal {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.encabezado_principal h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.contenedor_principal {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 15px;
+    padding: 20px 20px;
+    background-color: #f5f5f5;
+}
+
+/* Panel izquierdo - Perfil */
+.panel_perfil {
+    width: 200px;
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 0; /* Cuadrado perfecto */
+}
+
+.contenedor_avatar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icono_avatar {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 50%; /* Mantener circular para el avatar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 10px;
+    background-color: white;
+}
+
+.enlace_avatar {
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.nombre_usuario {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Feed principal */
+.contenedor_feed {
+    flex: 1;
+    max-width: 500px;
+}
+
+.titulo_feed {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Publicaciones */
+.publicacion {
+    background-color: white;
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 0; /* Cuadrado perfecto */
+}
+
+.encabezado_publicacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nombre_autor {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.seccion_likes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contador_likes {
+    font-size: 14px;
+    color: #666;
+}
+
+.boton_like {
+    background-color: #ffd700;
+    border: 1px solid #999;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0; /* Cuadrado perfecto */
+}
+
+.boton_like:hover {
+    background-color: #ffed4e;
+}
+
+.contenido_publicacion {
+    color: #333;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.enlace_publicacion {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Panel derecho - Instrucciones */
+.panel_instrucciones {
+    width: 180px;
+}
+
+.nota_instructiva {
+    background-color: #fff3a0;
+    border: 2px solid #000;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #333;
+    border-radius: 0; /* Cuadrado perfecto */
+}
