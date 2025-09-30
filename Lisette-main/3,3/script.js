@@ -29,5 +29,5 @@ function meGusta(boton) {
     // Ocultar la notificación después de 3 segundos
     setTimeout(function() {
         notificacion.style.display = 'none';
-    }, 3000);
+    }, 3000); 
 } 
