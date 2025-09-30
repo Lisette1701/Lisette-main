@@ -30,4 +30,4 @@ function meGusta(boton) {
     setTimeout(function() {
         notificacion.style.display = 'none';
     }, 3000);
-}
+} 
