@@ -1,79 +1,79 @@
-/* RESET + FUENTE */
+/* Todo lo principal */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-/* BODY GENERAL */
+/* cuerpo general */
 body {
     background-color: #f3f3f3;
 }
 
-/* BARRA SUPERIOR */
+/* la barra superior */
 .top {
     background-color: #333333;
     height: 100px;
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
     padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-top: 20px solid #9900ff;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 .top h1 {
-    color: #ffffff;
     margin: 0;
+    color: #ffffff;
 }
 
 .search-group {
     flex: 1;
-    display: flex;
     justify-content: center;
+    display: flex;
 }
 
 .search {
-    padding: 10px;
     width: 300px;
+    padding: 10px;
     font-size: 16px;
 }
 
-/* BOTONES */
+/* botones */
 .btn {
     background-color: #9900ff;
     color: white;
-    padding: 8px 18px;
     border: none;
+    padding: 8px 18px;
     border-radius: 4px;
     font-size: 1rem;
-    cursor: pointer;
     margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
     font-weight: bold;
     box-shadow: 5px 5px 0 0 #000000;
-    transition: 0.3s ease;
 }
 
 .btn:hover {
     background-color: #7a00cc;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* CONTENEDOR PRINCIPAL (FLEX LAYOUT) */
+/* contenedor principal */
 .flex-container {
     background-color: #ffffff;
     width: 80%;
     margin: 30px auto;
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    padding: 20px;
     gap: 20px;
+    justify-content: space-between;
 }
 
-/* COLUMNA IZQUIERDA (VIDEO PRINCIPAL) */
+/* columna izquierda */
 .col-l {
     flex: 2;
 }
@@ -81,8 +81,8 @@ body {
 .video_main {
     width: 720px;
     height: 400px;
-    margin-top: 30px;
     border-radius: 10px;
+    margin-top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -90,12 +90,12 @@ body {
     margin-top: 30px;
 }
 
-/* INFO DEL VIDEO */
+/* información del video */
 .title-and-button {
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-top: 20px;
+    gap: 10px;
 }
 
 .title-and-button h1 {
@@ -110,14 +110,14 @@ body {
 }
 
 .user {
+    gap: 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
 }
 
 .avatar-s {
-    width: 60px;
     height: 60px;
+    width: 60px;
     border-radius: 50%;
 }
 
@@ -126,23 +126,23 @@ body {
     color: #cd83f8;
 }
 
-/* COLUMNA DERECHA (VIDEOS SUGERIDOS) */
+/* columa derecha con los videos sugeridos */
 .col-r {
     flex: 1;
     max-width: 300px;
+    border-radius: 8px;
     background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .sub-header {
-    margin-bottom: 15px;
     color: #333;
+    margin-bottom: 15px;
     margin-left: -150px;
 }
 
-/* VIDEO SUGERIDO */
+/* Los videos sugeridos */
 .video-small {
     display: flex;
     align-items: center;
@@ -153,17 +153,16 @@ body {
 .vid-s {
     width: 200px;
     height: auto;
-    object-fit: cover;
     border-radius: 6px;
-    cursor: pointer;
     transition: transform 0.3s ease;
+    object-fit: cover;
+    cursor: pointer;
     margin-left: -150px;
 }
 
 .video-title {
-    font-size: 0.9rem;
     color: #444;
-
+    font-size: 0.9rem;
 }
 
 /* RESPONSIVE (Opcional) */
@@ -173,8 +172,8 @@ body {
     }
 
     .col-r {
-        max-width: 100%;
         margin-top: 20px;
+        max-width: 100%;
     }
 
     .video_main {
@@ -183,7 +182,7 @@ body {
     }
 
     .title-and-button {
-        flex-direction: column;
         align-items: flex-start;
+        flex-direction: column;
     }
 }
